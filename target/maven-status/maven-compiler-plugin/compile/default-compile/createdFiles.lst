@@ -1,6 +1,0 @@
-com\mule\custom\provider\api\CustomConfigurationPropertiesExtensionLoadingDelegate.class
-com\mule\custom\provider\api\CustomConfigurationPropertiesProviderFactory$1.class
-com\mule\custom\provider\secret\SecureSecretFIleProvider.class
-com\mule\custom\provider\factory\CustomFileProvider.class
-com\mule\custom\provider\api\CustomConfigurationPropertiesProviderFactory.class
-com\mule\custom\provider\factory\CustomFileProviderFactory.class
