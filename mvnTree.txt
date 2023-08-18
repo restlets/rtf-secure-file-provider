@@ -1,0 +1,609 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] --< com.mule.rtf.custom.provider:mule-rtf-secure-file-provider-module >--
+[INFO] Building rtf-secure-file-provider 1.0.1
+[INFO] ---------------------------[ mule-extension ]---------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:2.8:tree (default-cli) @ mule-rtf-secure-file-provider-module ---
+Downloading from : https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/org/mule/runtime/mule-module-tls/4.5.0-20221117/mule-module-tls-4.5.0-20221117.pom
+Downloading from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-module-tls/4.5.0-20221117/mule-module-tls-4.5.0-20221117.pom
+Downloaded from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-module-tls/4.5.0-20221117/mule-module-tls-4.5.0-20221117.pom (0 B at 0 B/s)
+Downloading from : https://maven.anypoint.mulesoft.com/api/v2/organizations/3ed3104d-b776-470b-a466-05237237d94e/maven/org/mule/runtime/mule-module-javaee/4.5.0-20221117/mule-module-javaee-4.5.0-20221117.pom
+Downloading from : https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/org/mule/runtime/mule-module-javaee/4.5.0-20221117/mule-module-javaee-4.5.0-20221117.pom
+Downloading from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-module-javaee/4.5.0-20221117/mule-module-javaee-4.5.0-20221117.pom
+Downloaded from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-module-javaee/4.5.0-20221117/mule-module-javaee-4.5.0-20221117.pom (0 B at 0 B/s)
+Downloading from : https://maven.anypoint.mulesoft.com/api/v2/organizations/3ed3104d-b776-470b-a466-05237237d94e/maven/org/mule/runtime/mule-dwb-api/2.5.0-20221117/mule-dwb-api-2.5.0-20221117.pom
+Downloading from : https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/org/mule/runtime/mule-dwb-api/2.5.0-20221117/mule-dwb-api-2.5.0-20221117.pom
+Downloading from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-dwb-api/2.5.0-20221117/mule-dwb-api-2.5.0-20221117.pom
+Downloaded from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/runtime/mule-dwb-api/2.5.0-20221117/mule-dwb-api-2.5.0-20221117.pom (0 B at 0 B/s)
+Downloading from : https://maven.anypoint.mulesoft.com/api/v2/organizations/3ed3104d-b776-470b-a466-05237237d94e/maven/org/mule/weave/dwb-api/2.5.0-20221117/dwb-api-2.5.0-20221117.pom
+Downloading from : https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/org/mule/weave/dwb-api/2.5.0-20221117/dwb-api-2.5.0-20221117.pom
+Downloading from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/weave/dwb-api/2.5.0-20221117/dwb-api-2.5.0-20221117.pom
+Downloaded from : https://repository-master.mulesoft.org/nexus/content/repositories/releases/org/mule/weave/dwb-api/2.5.0-20221117/dwb-api-2.5.0-20221117.pom (0 B at 0 B/s)
+[INFO] com.mule.rtf.custom.provider:mule-rtf-secure-file-provider-module:mule-extension:1.0.1
+[INFO] +- org.mule.runtime:mule-module-spring-config:jar:4.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-core-mvel:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.mvel:mule-mvel2:jar:2.1.9-MULE-020:provided
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.7:provided - omitted for conflict with 1.7.30)
+[INFO] |  |  \- (commons-collections:commons-collections:jar:3.2.2:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-core-components:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  |  +- (io.projectreactor:reactor-core:jar:3.4.22:provided - omitted for duplicate)
+[INFO] |  |  \- (io.projectreactor.addons:reactor-extra:jar:3.4.8:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-artifact:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (com.vdurmont:semver4j:jar:3.1.0:provided - omitted for duplicate)
+[INFO] |  |  \- org.eclipse.aether:aether-api:jar:1.0.2.v20150114:provided
+[INFO] |  +- org.mule.runtime:mule-module-artifact-activation:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-module-artifact:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-container:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-service:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-module-global-config:jar:4.5.0-20221117:provided
+[INFO] |  |  |  +- com.typesafe:config:jar:1.3.1:provided
+[INFO] |  |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.mule:mule-maven-client-api:jar:1.7.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.everit.json:org.everit.json.schema:jar:1.5.1:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.mule.runtime:mule-module-container:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast-xml-parser:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- de.skuzzle:semantic-version:jar:1.2.0:provided
+[INFO] |  +- (org.mule.runtime:mule-module-service:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-feature-management:jar:4.5.0-20221117:provided
+[INFO] |  |  +- org.togglz:togglz-core:jar:3.0.0:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-profiling-api:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-properties-config:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-properties-api:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-dsl-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-artifact-ast-xml-parser:jar:1.1.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-dsl-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-properties-api:jar:1.1.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.yaml:snakeyaml:jar:1.31:provided - omitted for conflict with 1.29)
+[INFO] |  |  \- (org.vibur:vibur-object-pool:jar:23.0:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-artifact-ast-dependency-graph:jar:1.1.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.jgrapht:jgrapht-core:jar:1.3.1:provided - omitted for duplicate)
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.36:provided - omitted for conflict with 1.7.31)
+[INFO] |  +- org.springframework:spring-context:jar:5.3.21:provided
+[INFO] |  |  +- (org.springframework:spring-aop:jar:5.3.21:provided - omitted for duplicate)
+[INFO] |  |  +- org.springframework:spring-beans:jar:5.3.21:provided
+[INFO] |  |  |  \- (org.springframework:spring-core:jar:5.3.21:provided - omitted for duplicate)
+[INFO] |  |  +- org.springframework:spring-core:jar:5.3.21:provided
+[INFO] |  |  |  \- org.springframework:spring-jcl:jar:5.3.21:provided
+[INFO] |  |  \- org.springframework:spring-expression:jar:5.3.21:provided
+[INFO] |  |     \- (org.springframework:spring-core:jar:5.3.21:provided - omitted for duplicate)
+[INFO] |  +- org.springframework:spring-aop:jar:5.3.21:provided
+[INFO] |  |  +- (org.springframework:spring-beans:jar:5.3.21:provided - omitted for duplicate)
+[INFO] |  |  \- (org.springframework:spring-core:jar:5.3.21:provided - omitted for duplicate)
+[INFO] |  +- org.mule.sdk:mule-sdk-compatibility-api:jar:1.0.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.sdk:mule-sdk-api:jar:1.0.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-logging:jar:4.5.0-20221117:provided
+[INFO] |  |  +- com.lmax:disruptor:jar:3.4.2:provided
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.30:provided - omitted for conflict with 1.7.36)
+[INFO] |  |  +- org.slf4j:slf4j-ext:jar:1.7.30:provided
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.30:provided - omitted for conflict with 1.7.36)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-api:jar:2.17.1:provided
+[INFO] |  |  +- org.apache.logging.log4j:log4j-core:jar:2.17.1:provided
+[INFO] |  |  |  \- (org.apache.logging.log4j:log4j-api:jar:2.17.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-slf4j-impl:jar:2.17.1:provided
+[INFO] |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.25:provided - omitted for conflict with 1.7.36)
+[INFO] |  |  |  +- (org.apache.logging.log4j:log4j-api:jar:2.17.1:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.apache.logging.log4j:log4j-core:jar:2.17.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.apache.logging.log4j:log4j-1.2-api:jar:2.17.1:provided
+[INFO] |  |  |  \- (org.apache.logging.log4j:log4j-api:jar:2.17.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.slf4j:jcl-over-slf4j:jar:1.7.30:provided
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.30:provided - omitted for conflict with 1.7.36)
+[INFO] |  |  \- org.slf4j:jul-to-slf4j:jar:1.7.30:provided
+[INFO] |  |     \- (org.slf4j:slf4j-api:jar:1.7.30:provided - omitted for conflict with 1.7.36)
+[INFO] |  +- org.mule.runtime:mule-module-dsl-api:jar:1.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  +- (org.mule.apache:xerces2-xsd11:jar:2.11.3:provided - omitted for duplicate)
+[INFO] |  |  \- xml-apis:xml-apis:jar:1.4.01:provided
+[INFO] |  +- org.mule.runtime:mule-module-deployment-model:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-module-reboot:jar:4.5.0-20221117:provided
+[INFO] |  |  |  +- commons-cli:commons-cli:jar:1.2:provided
+[INFO] |  |  |  \- tanukisoft:wrapper:jar:3.2.3:provided
+[INFO] |  |  +- (org.mule.runtime:mule-module-artifact:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-artifact-activation:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-container:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- org.mule.runtime:mule-module-memory-management:jar:4.5.0-20221117:provided
+[INFO] |  |     +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |     \- (org.mule.runtime:mule-profiling-api:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-extensions-support:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-extensions-api-dsql:jar:1.5.0-20221117:provided
+[INFO] |  |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.antlr:antlr-runtime:jar:3.5.2:provided
+[INFO] |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-extensions-api-persistence:jar:1.5.0-20221117:provided
+[INFO] |  |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.mule.runtime:mule-metadata-model-persistence:jar:1.5.0-20221117:provided
+[INFO] |  |  |     +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.mule.runtime:mule-metadata-model-json:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |     +- (org.mule.runtime:mule-metadata-model-xml:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |     +- (com.google.code.gson:gson:jar:2.8.5:provided - omitted for conflict with 2.8.6)
+[INFO] |  |  |     +- (org.slf4j:slf4j-api:jar:1.7.26:provided - omitted for conflict with 1.7.36)
+[INFO] |  |  |     +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  |  |     \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-deployment-model:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-metadata-support:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-service-oauth-api:jar:4.5.0-20221117:provided
+[INFO] |  |  |  \- org.mule.commons:mule-oauth-client:jar:1.1.0-20221117:provided
+[INFO] |  |  |     +- (commons-codec:commons-codec:jar:1.15:provided - omitted for duplicate)
+[INFO] |  |  |     +- (commons-io:commons-io:jar:2.11.0:provided - omitted for conflict with 2.8.0)
+[INFO] |  |  |     +- (org.apache.commons:commons-lang3:jar:3.12.0:provided - omitted for conflict with 3.8.1)
+[INFO] |  |  |     \- (com.github.ben-manes.caffeine:caffeine:jar:2.9.3:provided - omitted for conflict with 2.8.0)
+[INFO] |  |  +- (org.mule.sdk:mule-sdk-compatibility-api:jar:1.0.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (io.projectreactor:reactor-core:jar:3.4.22:provided - omitted for duplicate)
+[INFO] |  |  \- (net.bytebuddy:byte-buddy:jar:1.10.7:provided - omitted for duplicate)
+[INFO] |  +- net.bytebuddy:byte-buddy:jar:1.10.7:provided
+[INFO] |  \- org.mule.runtime:mule-module-metadata-support:jar:4.5.0-20221117:provided
+[INFO] |     +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |     \- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] +- io.kubernetes:client-java:jar:13.0.0:compile
+[INFO] |  +- io.prometheus:simpleclient:jar:0.11.0:compile
+[INFO] |  |  +- io.prometheus:simpleclient_tracer_otel:jar:0.11.0:compile
+[INFO] |  |  |  \- io.prometheus:simpleclient_tracer_common:jar:0.11.0:compile
+[INFO] |  |  \- io.prometheus:simpleclient_tracer_otel_agent:jar:0.11.0:compile
+[INFO] |  |     \- (io.prometheus:simpleclient_tracer_common:jar:0.11.0:compile - omitted for duplicate)
+[INFO] |  +- io.prometheus:simpleclient_httpserver:jar:0.11.0:compile
+[INFO] |  |  +- (io.prometheus:simpleclient:jar:0.11.0:compile - omitted for duplicate)
+[INFO] |  |  \- io.prometheus:simpleclient_common:jar:0.11.0:compile
+[INFO] |  |     \- (io.prometheus:simpleclient:jar:0.11.0:compile - omitted for duplicate)
+[INFO] |  +- io.kubernetes:client-java-api:jar:13.0.0:compile
+[INFO] |  |  +- javax.annotation:javax.annotation-api:jar:1.3.2:compile
+[INFO] |  |  +- io.swagger:swagger-annotations:jar:1.6.2:compile
+[INFO] |  |  +- com.squareup.okhttp3:okhttp:jar:4.9.1:compile
+[INFO] |  |  |  +- com.squareup.okio:okio:jar:2.8.0:compile
+[INFO] |  |  |  |  +- (org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.0:compile - omitted for conflict with 1.4.10)
+[INFO] |  |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.0:compile
+[INFO] |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10:compile
+[INFO] |  |  |     +- (org.jetbrains.kotlin:kotlin-stdlib-common:jar:1.4.10:compile - omitted for conflict with 1.4.0)
+[INFO] |  |  |     \- org.jetbrains:annotations:jar:13.0:compile
+[INFO] |  |  +- com.squareup.okhttp3:logging-interceptor:jar:4.9.1:compile
+[INFO] |  |  |  +- (com.squareup.okhttp3:okhttp:jar:4.9.1:compile - omitted for duplicate)
+[INFO] |  |  |  \- org.jetbrains.kotlin:kotlin-stdlib-jdk8:jar:1.4.10:compile
+[INFO] |  |  |     +- (org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10:compile - omitted for duplicate)
+[INFO] |  |  |     \- org.jetbrains.kotlin:kotlin-stdlib-jdk7:jar:1.4.10:compile
+[INFO] |  |  |        \- (org.jetbrains.kotlin:kotlin-stdlib:jar:1.4.10:compile - omitted for duplicate)
+[INFO] |  |  +- com.google.code.gson:gson:jar:2.8.5:compile
+[INFO] |  |  +- io.gsonfire:gson-fire:jar:1.8.5:compile
+[INFO] |  |  |  \- (com.google.code.gson:gson:jar:2.8.6:compile - omitted for conflict with 2.8.5)
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.8.1:compile - omitted for conflict with 3.12.0)
+[INFO] |  |  \- com.google.code.findbugs:jsr305:jar:3.0.2:compile
+[INFO] |  +- io.kubernetes:client-java-proto:jar:13.0.0:compile
+[INFO] |  |  \- (com.google.protobuf:protobuf-java:jar:3.17.3:compile - omitted for duplicate)
+[INFO] |  +- org.yaml:snakeyaml:jar:1.29:compile
+[INFO] |  +- commons-codec:commons-codec:jar:1.15:compile
+[INFO] |  +- org.apache.commons:commons-compress:jar:1.21:compile
+[INFO] |  +- org.apache.commons:commons-lang3:jar:3.12.0:compile
+[INFO] |  +- commons-io:commons-io:jar:2.11.0:compile
+[INFO] |  +- org.slf4j:slf4j-api:jar:1.7.31:compile
+[INFO] |  +- org.bouncycastle:bcprov-ext-jdk15on:jar:1.69:compile
+[INFO] |  +- org.bouncycastle:bcpkix-jdk15on:jar:1.69:compile
+[INFO] |  |  +- org.bouncycastle:bcprov-jdk15on:jar:1.69:compile
+[INFO] |  |  \- org.bouncycastle:bcutil-jdk15on:jar:1.69:compile
+[INFO] |  |     \- (org.bouncycastle:bcprov-jdk15on:jar:1.69:compile - omitted for duplicate)
+[INFO] |  +- com.google.protobuf:protobuf-java:jar:3.17.3:compile
+[INFO] |  +- org.apache.commons:commons-collections4:jar:4.4:compile
+[INFO] |  \- org.bitbucket.b_c:jose4j:jar:0.7.8:compile
+[INFO] |     \- (org.slf4j:slf4j-api:jar:1.7.21:compile - omitted for conflict with 1.7.31)
+[INFO] +- org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  +- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- com.google.guava:guava:jar:30.1.1-jre:provided
+[INFO] |  |  +- com.google.guava:failureaccess:jar:1.0.1:provided
+[INFO] |  |  +- com.google.guava:listenablefuture:jar:9999.0-empty-to-avoid-conflict-with-guava:provided
+[INFO] |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.2:provided - omitted for duplicate)
+[INFO] |  |  +- org.checkerframework:checker-qual:jar:3.8.0:provided
+[INFO] |  |  +- com.google.errorprone:error_prone_annotations:jar:2.5.1:provided
+[INFO] |  |  \- com.google.j2objc:j2objc-annotations:jar:1.3:provided
+[INFO] |  +- org.reactivestreams:reactive-streams:jar:1.0.2:provided
+[INFO] |  +- org.mule.glassfish.jaxb:jaxb-runtime:jar:2.3.1-MULE-001:provided
+[INFO] |  |  +- (javax.xml.bind:jaxb-api:jar:2.3.1:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.glassfish.jaxb:txw2:jar:2.3.1-MULE-001:provided
+[INFO] |  |  +- com.sun.istack:istack-commons-runtime:jar:3.0.7:provided
+[INFO] |  |  +- org.jvnet.staxex:stax-ex:jar:1.8:provided
+[INFO] |  |  +- com.sun.xml.fastinfoset:FastInfoset:jar:1.2.15:provided
+[INFO] |  |  \- javax.activation:javax.activation-api:jar:1.2.0:provided
+[INFO] |  +- com.sun.activation:javax.activation:jar:1.2.0:provided
+[INFO] |  \- javax.transaction:javax.transaction-api:jar:1.3:provided
+[INFO] +- org.mule.runtime:mule-api:jar:1.5.0-20221117:provided
+[INFO] |  +- org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided
+[INFO] |  |  +- (org.apache.commons:commons-lang3:jar:3.9:provided - omitted for conflict with 3.12.0)
+[INFO] |  |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-message-metadata-model:jar:1.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.apache.commons:commons-lang3:jar:3.8.1:provided - omitted for conflict with 3.12.0)
+[INFO] |  +- (commons-io:commons-io:jar:2.8.0:provided - omitted for conflict with 2.11.0)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.30:provided - omitted for conflict with 1.7.31)
+[INFO] |  +- javax.inject:javax.inject:jar:1:provided
+[INFO] |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  +- com.github.ben-manes.caffeine:caffeine:jar:2.8.0:provided
+[INFO] |  |  +- (org.checkerframework:checker-qual:jar:2.10.0:provided - omitted for conflict with 3.8.0)
+[INFO] |  |  \- (com.google.errorprone:error_prone_annotations:jar:2.3.3:provided - omitted for conflict with 2.5.1)
+[INFO] |  +- (com.sun.activation:javax.activation:jar:1.2.0:provided - omitted for duplicate)
+[INFO] |  +- com.vdurmont:semver4j:jar:3.1.0:provided
+[INFO] |  +- org.mule.runtime:mule-artifact-declaration:jar:1.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.apache.commons:commons-lang3:jar:3.7:provided - omitted for conflict with 3.12.0)
+[INFO] |  +- org.mule.runtime:mule-artifact-declaration-persistence:jar:1.5.0-20221117:provided
+[INFO] |  |  \- (com.google.code.gson:gson:jar:2.8.5:provided - omitted for conflict with 2.8.5)
+[INFO] |  \- org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided
+[INFO] +- org.mule.runtime:mule-core:jar:4.5.0-20221117:provided
+[INFO] |  +- io.opentelemetry:opentelemetry-api:jar:1.10.1:provided
+[INFO] |  |  \- io.opentelemetry:opentelemetry-context:jar:1.10.1:provided
+[INFO] |  +- io.opentelemetry:opentelemetry-sdk:jar:1.10.1:provided
+[INFO] |  |  +- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-common:jar:1.10.1:provided
+[INFO] |  |  |  +- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  |  \- io.opentelemetry:opentelemetry-semconv:jar:1.10.1-alpha:provided
+[INFO] |  |  |     \- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-trace:jar:1.10.1:provided
+[INFO] |  |  |  +- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  |  +- (io.opentelemetry:opentelemetry-sdk-common:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  |  \- (io.opentelemetry:opentelemetry-semconv:jar:1.10.1-alpha:provided - omitted for duplicate)
+[INFO] |  |  +- io.opentelemetry:opentelemetry-sdk-metrics:jar:1.10.1-alpha:provided
+[INFO] |  |  |  +- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  |  \- (io.opentelemetry:opentelemetry-sdk-common:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |  \- io.opentelemetry:opentelemetry-sdk-logs:jar:1.10.1-alpha:provided
+[INFO] |  |     \- (io.opentelemetry:opentelemetry-sdk-common:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  +- io.opentelemetry:opentelemetry-exporter-otlp:jar:1.10.1:provided
+[INFO] |  |  \- io.opentelemetry:opentelemetry-exporter-otlp-trace:jar:1.10.1:provided
+[INFO] |  |     +- (io.opentelemetry:opentelemetry-sdk-trace:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |     \- io.opentelemetry:opentelemetry-exporter-otlp-common:jar:1.10.1:provided
+[INFO] |  |        +- (io.opentelemetry:opentelemetry-api:jar:1.10.1:provided - omitted for duplicate)
+[INFO] |  |        \- (com.squareup.okhttp3:okhttp:jar:4.9.3:provided - omitted for conflict with 4.9.1)
+[INFO] |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  +- org.mule.sdk:mule-sdk-api:jar:1.0.0-20221117:provided
+[INFO] |  +- org.mule.runtime:mule-profiling-api:jar:1.1.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:api-annotations:jar:1.1.1:provided - omitted for conflict with 1.4.0-20221117)
+[INFO] |  +- (org.mule.runtime:mule-module-feature-management:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-runtime-extension-model:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-metadata-model-catalog:jar:1.5.0-20221117:provided
+[INFO] |  |  |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.mule.runtime:mule-metadata-model-json:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.mule.runtime:mule-metadata-model-xml:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- org.mule.runtime:mule-metadata-model-raml:jar:1.5.0-20221117:provided
+[INFO] |  |  |  |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.mule.runtime:mule-metadata-model-json:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.mule.runtime:mule-metadata-model-xml:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- org.raml:raml-parser-2:jar:1.0.44-6:provided
+[INFO] |  |  |  |  |  +- org.raml:yagi:jar:1.0.44-6:provided
+[INFO] |  |  |  |  |  |  +- (commons-io:commons-io:jar:2.6:provided - omitted for conflict with 2.11.0)
+[INFO] |  |  |  |  |  |  +- commons-lang:commons-lang:jar:2.6:provided
+[INFO] |  |  |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.14:provided - omitted for conflict with 1.7.31)
+[INFO] |  |  |  |  |  |  +- com.google.code.findbugs:annotations:jar:3.0.0:provided
+[INFO] |  |  |  |  |  |  +- (com.google.guava:guava:jar:18.0:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |  |  |  |  |  |  \- com.fasterxml.jackson.module:jackson-module-jsonSchema:jar:2.10.0:provided
+[INFO] |  |  |  |  |  |     +- (com.fasterxml.jackson.core:jackson-annotations:jar:2.10.0:provided - omitted for conflict with 2.12.5)
+[INFO] |  |  |  |  |  |     +- (com.fasterxml.jackson.core:jackson-core:jar:2.10.0:provided - omitted for conflict with 2.12.5)
+[INFO] |  |  |  |  |  |     +- (com.fasterxml.jackson.core:jackson-databind:jar:2.10.0:provided - omitted for conflict with 2.12.5)
+[INFO] |  |  |  |  |  |     \- javax.validation:validation-api:jar:1.1.0.Final:provided
+[INFO] |  |  |  |  |  +- com.github.java-json-tools:json-schema-validator:jar:2.2.10:provided
+[INFO] |  |  |  |  |  |  +- com.github.java-json-tools:json-schema-core:jar:1.2.10:provided
+[INFO] |  |  |  |  |  |  |  +- com.github.java-json-tools:jackson-coreutils:jar:1.9:provided
+[INFO] |  |  |  |  |  |  |  |  +- (com.fasterxml.jackson.core:jackson-databind:jar:2.2.3:provided - omitted for conflict with 2.10.0)
+[INFO] |  |  |  |  |  |  |  |  +- (com.google.guava:guava:jar:16.0.1:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |  |  |  |  |  |  |  |  +- com.github.fge:msg-simple:jar:1.1:provided
+[INFO] |  |  |  |  |  |  |  |  |  +- com.github.fge:btf:jar:1.2:provided
+[INFO] |  |  |  |  |  |  |  |  |  |  \- (com.google.code.findbugs:jsr305:jar:2.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  |  |  |  \- (com.google.code.findbugs:jsr305:jar:2.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  |  |  \- (com.google.code.findbugs:jsr305:jar:2.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  |  +- com.github.fge:uri-template:jar:0.9:provided
+[INFO] |  |  |  |  |  |  |  |  +- (com.github.fge:msg-simple:jar:1.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  |  |  |  |  +- (com.google.guava:guava:jar:16.0.1:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |  |  |  |  |  |  |  |  \- (com.google.code.findbugs:jsr305:jar:2.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  |  \- (com.google.code.findbugs:jsr305:jar:3.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  +- com.googlecode.libphonenumber:libphonenumber:jar:8.0.0:provided
+[INFO] |  |  |  |  |  |  +- (com.google.code.findbugs:jsr305:jar:3.0.1:provided - omitted for conflict with 3.0.2)
+[INFO] |  |  |  |  |  |  \- net.sf.jopt-simple:jopt-simple:jar:5.0.3:provided
+[INFO] |  |  |  |  |  +- com.googlecode.juniversalchardet:juniversalchardet:jar:1.0.3:provided
+[INFO] |  |  |  |  |  +- org.apache.ws.xmlschema:xmlschema-core:jar:2.2.1:provided
+[INFO] |  |  |  |  |  +- javax.json:javax.json-api:jar:1.0:provided
+[INFO] |  |  |  |  |  +- org.glassfish:javax.json:jar:1.0.4:provided
+[INFO] |  |  |  |  |  \- (com.sun.mail:jakarta.mail:jar:1.6.3:provided - omitted for conflict with 1.6.4)
+[INFO] |  |  |  |  +- (joda-time:joda-time:jar:2.9.1:provided - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.yaml:snakeyaml:jar:1.31:provided - omitted for conflict with 1.29)
+[INFO] |  |  |  |  +- org.mozilla:rhino:jar:1.7.12:provided
+[INFO] |  |  |  |  +- (com.sun.activation:javax.activation:jar:1.2.0:provided - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-artifact-ast:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-artifact-ast-dependency-graph:jar:1.1.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-http-policy-api:jar:1.5.0-20221117:provided
+[INFO] |  |  \- org.mule.runtime:mule-module-policy-api:jar:1.5.0-20221117:provided
+[INFO] |  |     \- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  +- commons-beanutils:commons-beanutils:jar:1.9.4:provided
+[INFO] |  |  \- (commons-collections:commons-collections:jar:3.2.2:provided - omitted for duplicate)
+[INFO] |  +- commons-collections:commons-collections:jar:3.2.2:provided
+[INFO] |  +- org.mule.com.github.stephenc.eaio-uuid:uuid:jar:3.4.2-MULE-001:provided
+[INFO] |  +- (javax.annotation:javax.annotation-api:jar:1.2:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- (commons-io:commons-io:jar:2.8.0:provided - omitted for conflict with 2.11.0)
+[INFO] |  +- (org.apache.commons:commons-lang3:jar:3.8.1:provided - omitted for conflict with 3.12.0)
+[INFO] |  +- org.apache.geronimo.specs:geronimo-j2ee-connector_1.5_spec:jar:2.0.0:provided
+[INFO] |  +- org.jgrapht:jgrapht-core:jar:1.3.1:provided
+[INFO] |  |  \- org.jheaps:jheaps:jar:0.10:provided
+[INFO] |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  +- org.reflections:reflections:jar:0.9.10:provided
+[INFO] |  |  \- (com.google.guava:guava:jar:15.0:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |  +- io.projectreactor:reactor-core:jar:3.4.22:provided
+[INFO] |  |  \- (org.reactivestreams:reactive-streams:jar:1.0.4:provided - omitted for conflict with 1.0.2)
+[INFO] |  +- io.projectreactor.addons:reactor-extra:jar:3.4.8:provided
+[INFO] |  +- cglib:cglib-nodep:jar:3.2.10:provided
+[INFO] |  +- org.apache.commons:commons-pool2:jar:2.6.2:provided
+[INFO] |  +- (com.github.ben-manes.caffeine:caffeine:jar:2.8.0:provided - omitted for duplicate)
+[INFO] |  +- net.jodah:failsafe:jar:2.1.1:provided
+[INFO] |  +- org.vibur:vibur-object-pool:jar:23.0:provided
+[INFO] |  +- com.conversantmedia:disruptor:jar:1.2.10:provided
+[INFO] |  |  \- (org.slf4j:slf4j-api:jar:1.7.13:provided - omitted for conflict with 1.7.31)
+[INFO] |  \- javax.jms:javax.jms-api:jar:2.0.1:provided
+[INFO] +- org.mule.runtime:mule-module-extensions-spring-support:jar:4.5.0-20221117:provided
+[INFO] |  +- org.jsoup:jsoup:jar:1.15.3:provided
+[INFO] |  +- (org.mule.runtime:mule-module-extensions-support:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-extensions-soap-support:jar:4.5.0-20221117:provided
+[INFO] |  |  +- org.mule.runtime:mule-extensions-soap-api:jar:1.5.0-20221117:provided
+[INFO] |  |  |  +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  |  +- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.mule.runtime:mule-extensions-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.runtime:mule-service-soap-api:jar:4.5.0-20221117:provided
+[INFO] |  |  |  +- (com.google.guava:guava:jar:30.1.1-jre:provided - omitted for duplicate)
+[INFO] |  |  |  +- (javax.xml.soap:javax.xml.soap-api:jar:1.4.0:provided - omitted for duplicate)
+[INFO] |  |  |  \- org.mule.runtime:mule-service-http-api:jar:4.5.0-20221117:provided
+[INFO] |  |  |     +- (org.mule.runtime:mule-api:jar:1.5.0-20221117:provided - version managed from 1.1.1; omitted for duplicate)
+[INFO] |  |  |     \- (com.github.ben-manes.caffeine:caffeine:jar:2.8.0:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.runtime:mule-module-extensions-support:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.sdk:mule-sdk-api:jar:1.0.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.mule.runtime:mule-metadata-model-xml:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.mule.runtime:mule-module-dsl-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-tls:jar:4.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-module-javaee:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.reflections:reflections:jar:0.9.10:provided - omitted for duplicate)
+[INFO] |  +- joda-time:joda-time:jar:2.9.1:provided
+[INFO] |  \- org.dom4j:dom4j:jar:2.1.3:provided
+[INFO] +- org.mule.runtime:mule-extension-ast-loader:jar:1.4.0-20221117:provided
+[INFO] |  \- org.mule.runtime:mule-metadata-model-java-ast:jar:1.5.0-20221117:provided
+[INFO] |     +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |     +- (org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |     \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] +- org.mule.runtime:mule-metadata-model-xml:jar:1.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.apache.xmlbeans:xmlbeans:jar:3.1.0:provided
+[INFO] |  +- org.mule.apache:xerces2-xsd11:jar:2.11.3:provided
+[INFO] |  +- (commons-io:commons-io:jar:2.6:provided - omitted for conflict with 2.11.0)
+[INFO] |  +- (org.slf4j:slf4j-api:jar:1.7.25:provided - omitted for conflict with 1.7.31)
+[INFO] |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] +- org.mule.runtime:mule-metadata-model-java:jar:1.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] +- org.mule.runtime:mule-metadata-model-json:jar:1.5.0-20221117:provided
+[INFO] |  +- (com.google.code.gson:gson:jar:2.8.5:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- org.everit.json:org.everit.json.schema:jar:1.5.1:provided
+[INFO] |  |  +- org.json:json:jar:20160810:provided
+[INFO] |  |  \- (com.google.guava:guava:jar:19.0:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |  +- (org.mule.runtime:mule-metadata-model-api:jar:1.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:provided - omitted for duplicate)
+[INFO] +- org.mule.runtime:mule-module-service:jar:4.5.0-20221117:provided
+[INFO] |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-container:jar:4.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.runtime:mule-core:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.mule.runtime:mule-module-artifact:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  +- (org.mule.runtime:mule-module-artifact:jar:4.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  \- org.mule.tools.maven:mule-classloader-model:jar:3.5.3:provided
+[INFO] |     +- (org.apache.commons:commons-lang3:jar:3.10:provided - omitted for conflict with 3.12.0)
+[INFO] |     +- (commons-io:commons-io:jar:2.7:provided - omitted for conflict with 2.11.0)
+[INFO] |     +- (com.google.guava:guava:jar:27.0-jre:provided - omitted for conflict with 30.1.1-jre)
+[INFO] |     \- (com.google.code.gson:gson:jar:2.8.6:provided - omitted for conflict with 2.8.5)
+[INFO] +- org.mule.services:mule-service-weave:jar:mule-service:2.5.0-20221117:provided
+[INFO] |  +- org.mule.weave:runtime:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:wlang:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.weave:core:jar:2.5.0-20221117:provided
+[INFO] |  |  |  +- org.mule.weave:parser:jar:2.5.0-20221117:provided
+[INFO] |  |  |  |  +- org.parboiled:parboiled_2.12:jar:2.1.8:provided
+[INFO] |  |  |  |  |  +- (org.scala-lang:scala-library:jar:2.12.8:provided - omitted for conflict with 2.12.10)
+[INFO] |  |  |  |  |  \- com.chuusai:shapeless_2.12:jar:2.3.3:provided
+[INFO] |  |  |  |  |     +- (org.scala-lang:scala-library:jar:2.12.4:provided - omitted for conflict with 2.12.10)
+[INFO] |  |  |  |  |     \- org.typelevel:macro-compat_2.12:jar:1.1.1:provided
+[INFO] |  |  |  |  |        \- (org.scala-lang:scala-library:jar:2.12.0:provided - omitted for conflict with 2.12.10)
+[INFO] |  |  |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  +- org.mule.weave:debugger:jar:2.5.0-20221117:provided
+[INFO] |  |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  +- org.mule.weave:wlang:jar:2.5.0-20221117:provided
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  +- org.mule.weave:java-module:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  \- (com.github.ben-manes.caffeine:caffeine:jar:2.8.0:provided - omitted for duplicate)
+[INFO] |  +- org.mule.weave:core-modules:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  +- com.fasterxml.woodstox:woodstox-core:jar:6.2.3:provided
+[INFO] |  |  |  \- org.codehaus.woodstox:stax2-api:jar:4.2.1:provided
+[INFO] |  |  +- com.fasterxml:aalto-xml:jar:1.2.2:provided
+[INFO] |  |  |  \- (org.codehaus.woodstox:stax2-api:jar:4.2:provided - omitted for conflict with 4.2.1)
+[INFO] |  |  \- com.sun.mail:jakarta.mail:jar:1.6.4:provided
+[INFO] |  |     \- com.sun.activation:jakarta.activation:jar:1.2.1:provided
+[INFO] |  +- org.mule.weave:yaml-module:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  \- org.mule.syaml:syaml_2.12:jar:1.1.317:provided
+[INFO] |  |     +- (org.scala-lang:scala-library:jar:2.12.11:provided - omitted for conflict with 2.12.10)
+[INFO] |  |     \- org.mule.common:scala-common_2.12:jar:1.0.89:provided
+[INFO] |  |        \- (org.scala-lang:scala-library:jar:2.12.11:provided - omitted for conflict with 2.12.10)
+[INFO] |  +- org.mule.weave:ndjson-module:jar:2.5.0-20221117:provided
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  +- org.mule.weave:avro-module:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.weave:java-module:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  +- org.apache.avro:avro:jar:1.11.0:provided
+[INFO] |  |  |  +- (com.fasterxml.jackson.core:jackson-core:jar:2.12.5:provided - omitted for conflict with 2.13.3)
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.12.5:provided
+[INFO] |  |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.12.5:provided
+[INFO] |  |  |  |  \- (com.fasterxml.jackson.core:jackson-core:jar:2.12.5:provided - omitted for duplicate)
+[INFO] |  |  |  +- (org.apache.commons:commons-compress:jar:1.21:provided - omitted for duplicate)
+[INFO] |  |  |  \- (org.slf4j:slf4j-api:jar:1.7.32:provided - omitted for conflict with 1.7.31)
+[INFO] |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.13.3:provided
+[INFO] |  +- org.mule.weave:jsonschema-module:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  |  +- (org.everit.json:org.everit.json.schema:jar:1.5.1:provided - omitted for duplicate)
+[INFO] |  |  +- (commons-beanutils:commons-beanutils:jar:1.9.4:provided - omitted for duplicate)
+[INFO] |  |  \- (org.json:json:jar:20220320:provided - omitted for conflict with 20160810)
+[INFO] |  +- org.mule.weave:dwb-module:jar:2.5.0-20221117:provided
+[INFO] |  |  +- (org.mule.weave:core:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.weave:core-modules:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  +- (org.mule.weave:java-module:jar:2.5.0-20221117:provided - omitted for duplicate)
+[INFO] |  |  \- (org.scala-lang:scala-library:jar:2.12.10:provided - omitted for duplicate)
+[INFO] |  \- org.scala-lang:scala-library:jar:2.12.10:provided
+[INFO] +- org.mule.runtime:mule-dwb-api:jar:2.5.0-20221117:provided
+[INFO] |  \- org.mule.weave:dwb-api:jar:2.5.0-20221117:provided
+[INFO] +- org.mule.runtime:mule-module-javaee:jar:4.5.0-20221117:provided
+[INFO] |  +- (com.sun.activation:javax.activation:jar:1.2.0:provided - omitted for duplicate)
+[INFO] |  +- (javax.annotation:javax.annotation-api:jar:1.3.2:compile - scope updated from provided; omitted for duplicate)
+[INFO] |  +- javax.jws:javax.jws-api:jar:1.1:provided
+[INFO] |  +- (javax.transaction:javax.transaction-api:jar:1.3:provided - omitted for duplicate)
+[INFO] |  +- javax.xml.bind:jaxb-api:jar:2.3.1:provided
+[INFO] |  |  \- (javax.activation:javax.activation-api:jar:1.2.0:provided - omitted for duplicate)
+[INFO] |  +- com.sun.xml.bind:jaxb-impl:jar:2.3.1-MULE-001:provided
+[INFO] |  +- com.sun.xml.bind:jaxb-core:jar:2.3.0.1:provided
+[INFO] |  +- javax.xml.soap:javax.xml.soap-api:jar:1.4.0:provided
+[INFO] |  \- javax.xml.ws:jaxws-api:jar:2.3.1:provided
+[INFO] |     +- (javax.xml.bind:jaxb-api:jar:2.3.1:provided - omitted for duplicate)
+[INFO] |     +- (javax.xml.soap:javax.xml.soap-api:jar:1.4.0:provided - omitted for duplicate)
+[INFO] |     \- (javax.annotation:javax.annotation-api:jar:1.3.2:provided - omitted for duplicate)
+[INFO] +- org.mule.tests.plugin:mule-tests-component-plugin:jar:mule-plugin:4.5.0-20221117:test
+[INFO] |  +- (org.apache.commons:commons-lang3:jar:3.8.1:test - omitted for conflict with 3.12.0)
+[INFO] |  +- (com.google.guava:guava:jar:30.1.1-jre:test - omitted for duplicate)
+[INFO] |  \- (io.projectreactor:reactor-core:jar:3.4.22:test - omitted for duplicate)
+[INFO] +- org.mule.tests:mule-tests-functional:jar:4.5.0-20221117:test
+[INFO] |  +- (com.github.ben-manes.caffeine:caffeine:jar:2.8.0:test - omitted for duplicate)
+[INFO] |  +- org.mule.runtime:mule-module-service:test-jar:tests:4.5.0-20221117:test
+[INFO] |  +- org.mule.runtime:mule-module-artifact:test-jar:tests:4.5.0-20221117:test
+[INFO] |  +- (org.mule.tests:mule-tests-unit:jar:4.5.0-20221117:test - omitted for duplicate)
+[INFO] |  \- org.mule.tests:mule-tests-model:jar:4.5.0-20221117:test
+[INFO] +- org.mule.tests:mule-tests-runner:jar:4.5.0-20221117:test
+[INFO] |  +- org.mule:mule-maven-client-api:jar:1.7.0-20221117:test
+[INFO] |  |  +- org.apache.maven:maven-model:jar:3.3.9:test
+[INFO] |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  +- org.codehaus.plexus:plexus-utils:jar:3.0.24:test
+[INFO] |  |  +- (org.slf4j:slf4j-api:jar:1.7.26:test - omitted for conflict with 1.7.31)
+[INFO] |  |  \- (org.mule.runtime:api-annotations:jar:1.4.0-20221117:test - omitted for duplicate)
+[INFO] |  +- org.mule:mule-maven-client-impl:jar:1.7.0-20221117:test
+[INFO] |  |  +- (org.mule:mule-maven-client-api:jar:1.7.0-20221117:test - omitted for duplicate)
+[INFO] |  |  +- (org.apache.maven:maven-model:jar:3.3.9:test - omitted for duplicate)
+[INFO] |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test
+[INFO] |  |  |  \- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.aether:aether-connector-basic:jar:1.0.2.v20150114:test
+[INFO] |  |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:test
+[INFO] |  |  |  |  \- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.aether:aether-transport-file:jar:1.0.2.v20150114:test
+[INFO] |  |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  +- org.eclipse.aether:aether-transport-wagon:jar:1.0.2.v20150114:test
+[INFO] |  |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  \- (org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  +- org.apache.maven.wagon:wagon-http:jar:3.4.2:test
+[INFO] |  |  |  +- org.apache.maven.wagon:wagon-http-shared:jar:3.4.2:test
+[INFO] |  |  |  |  +- (org.jsoup:jsoup:jar:1.12.1:test - omitted for conflict with 1.15.3)
+[INFO] |  |  |  |  +- (org.apache.httpcomponents:httpcore:jar:4.4.13:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (commons-io:commons-io:jar:2.6:test - omitted for conflict with 2.11.0)
+[INFO] |  |  |  |  +- (org.slf4j:slf4j-api:jar:1.7.25:test - omitted for conflict with 1.7.31)
+[INFO] |  |  |  |  \- (org.apache.maven.wagon:wagon-provider-api:jar:3.4.2:test - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.13:test
+[INFO] |  |  |  +- (org.slf4j:jcl-over-slf4j:jar:1.7.25:test - omitted for conflict with 1.7.30)
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.3.0:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  \- org.apache.maven.wagon:wagon-provider-api:jar:3.4.2:test
+[INFO] |  |  |     \- (org.codehaus.plexus:plexus-utils:jar:3.3.0:test - omitted for conflict with 3.0.24)
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:test
+[INFO] |  |  |  +- (org.apache.httpcomponents:httpcore:jar:4.4.13:test - omitted for duplicate)
+[INFO] |  |  |  +- commons-logging:commons-logging:jar:1.2:test
+[INFO] |  |  |  \- (commons-codec:commons-codec:jar:1.11:test - omitted for conflict with 1.15)
+[INFO] |  |  +- org.apache.maven:maven-settings-builder:jar:3.3.9:test
+[INFO] |  |  |  +- org.apache.maven:maven-builder-support:jar:3.3.9:test
+[INFO] |  |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  +- org.codehaus.plexus:plexus-interpolation:jar:1.21:test
+[INFO] |  |  |  +- org.codehaus.plexus:plexus-component-annotations:jar:1.6:test
+[INFO] |  |  |  +- org.apache.maven:maven-settings:jar:3.3.9:test
+[INFO] |  |  |  |  \- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  +- org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:test
+[INFO] |  |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:1.5.5:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  |  \- org.sonatype.plexus:plexus-cipher:jar:1.4:test
+[INFO] |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  +- org.apache.maven:maven-aether-provider:jar:3.3.9:test
+[INFO] |  |  |  +- (org.apache.maven:maven-model:jar:3.3.9:test - omitted for duplicate)
+[INFO] |  |  |  +- org.apache.maven:maven-model-builder:jar:3.3.9:test
+[INFO] |  |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  |  +- (org.codehaus.plexus:plexus-interpolation:jar:1.21:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.codehaus.plexus:plexus-component-annotations:jar:1.6:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.apache.maven:maven-model:jar:3.3.9:test - omitted for duplicate)
+[INFO] |  |  |  |  +- org.apache.maven:maven-artifact:jar:3.3.9:test
+[INFO] |  |  |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  |  |  +- (org.apache.maven:maven-builder-support:jar:3.3.9:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (com.google.guava:guava:jar:18.0:test - omitted for conflict with 30.1.1-jre)
+[INFO] |  |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  |  +- org.apache.maven:maven-repository-metadata:jar:3.3.9:test
+[INFO] |  |  |  |  \- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- org.eclipse.aether:aether-impl:jar:1.0.2.v20150114:test
+[INFO] |  |  |  |  +- (org.eclipse.aether:aether-api:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  |  +- (org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  |  \- (org.eclipse.aether:aether-util:jar:1.0.2.v20150114:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-component-annotations:jar:1.6:test - omitted for duplicate)
+[INFO] |  |  |  +- (org.codehaus.plexus:plexus-utils:jar:3.0.22:test - omitted for conflict with 3.0.24)
+[INFO] |  |  |  \- (org.apache.commons:commons-lang3:jar:3.4:test - omitted for conflict with 3.12.0)
+[INFO] |  |  +- (commons-io:commons-io:jar:2.8.0:test - omitted for conflict with 2.11.0)
+[INFO] |  |  +- com.beust:jcommander:jar:1.69:test
+[INFO] |  |  \- org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.2:test
+[INFO] |  \- junit:junit:jar:4.12:test
+[INFO] \- org.mule.tests:mule-tests-unit:jar:4.5.0-20221117:test
+[INFO]    +- (org.mule.runtime:mule-module-logging:jar:4.5.0-20221117:test - omitted for duplicate)
+[INFO]    +- (junit:junit:jar:4.12:test - omitted for duplicate)
+[INFO]    +- org.mockito:mockito-core:jar:2.26.0:test
+[INFO]    |  +- (net.bytebuddy:byte-buddy:jar:1.9.10:test - omitted for conflict with 1.10.7)
+[INFO]    |  +- net.bytebuddy:byte-buddy-agent:jar:1.9.10:test
+[INFO]    |  \- org.objenesis:objenesis:jar:2.6:test
+[INFO]    +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO]    \- (org.mule.tests:mule-tests-model:jar:4.5.0-20221117:test - omitted for duplicate)
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  7.058 s
+[INFO] Finished at: 2023-08-17T19:28:39-07:00
+[INFO] ------------------------------------------------------------------------
